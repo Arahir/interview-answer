@@ -1,5 +1,5 @@
 <div class="container">
-  <button (click)="navigate(-1)">&lt;</button>
-  <img [src]="images[current]">
-  <button (click)="navigate(+1)">&gt;</button>
+  <img src="assets/left_arrow.svg" class="navigation" (click)="navigate(-1)">
+  <img [src]="images[current]" class="content">
+  <img src="assets/right_arrow.svg" class="navigation" (click)="navigate(+1)">
 </div>
