@@ -1,3 +1,5 @@
 <div class="container">
-  <!-- Your Carousel -->
+  <button (click)="navigate(-1)">&lt;</button>
+  <img [src]="images[current]">
+  <button (click)="navigate(+1)">&gt;</button>
 </div>

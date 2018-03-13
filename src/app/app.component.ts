@@ -11,4 +11,10 @@ export class AppComponent {
     'https://images.unsplash.com/photo-1471874276752-65e2d717604a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d89f633e450817a42ddfaa45de0c0748&auto=format&fit=crop&w=1350&q=80',
     'https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f1ca1d883d6523669e6af0a68c7069ef&auto=format&fit=crop&w=1350&q=80'
   ];
+
+  current: number = 0;
+
+  navigate(step: number) {
+    this.current = (this.current + step + this.images.length) % this.images.length;
+  }
 }
